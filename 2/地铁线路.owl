@@ -1,0 +1,1558 @@
+@prefix : <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10> .
+
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#包含
+:包含 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#属于
+:属于 rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#位于
+:位于 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#有支线
+:有支线 rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#地铁站
+:地铁站 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#地铁线路
+:地铁线路 rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#S1号线
+:S1号线 rdf:type owl:NamedIndividual ,
+               :地铁线路 ;
+      :包含 :南京南站 ,
+          :吉印大道站 ,
+          :正方中路站 ,
+          :河海大学·佛城西路站 ,
+          :禄口机场站 ,
+          :空港新城江宁站 ,
+          :翔宇路北站 ,
+          :翔宇路南站 ,
+          :翠屏山站 ;
+      :有支线 "acrossS1-s7"^^xsd:string ,
+           "acrossS1-s9"^^xsd:string ,
+           "lineS1-1"^^xsd:string ,
+           "lineS1-2"^^xsd:string ,
+           "lineS1-3"^^xsd:string ,
+           "lineS1-4"^^xsd:string ,
+           "lineS1-5"^^xsd:string ,
+           "lineS1-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#S3号线
+:S3号线 rdf:type owl:NamedIndividual ,
+               :地铁线路 ;
+      :包含 :兰花塘站 ,
+          :刘村站 ,
+          :双垅站 ,
+          :吴侯街站 ,
+          :天保站 ,
+          :平良大街站 ,
+          :春江路站 ,
+          :景明佳园站 ,
+          :林山站 ,
+          :桥林新城站 ,
+          :永初路站 ,
+          :油坊桥站 ,
+          :石碛河站 ,
+          :贾西站 ,
+          :铁心桥站 ,
+          :马骡圩站 ,
+          :高家冲站 ,
+          :高庙路站 ;
+      :有支线 "lineS3-1"^^xsd:string ,
+           "lineS3-10"^^xsd:string ,
+           "lineS3-11"^^xsd:string ,
+           "lineS3-12"^^xsd:string ,
+           "lineS3-13"^^xsd:string ,
+           "lineS3-14"^^xsd:string ,
+           "lineS3-15"^^xsd:string ,
+           "lineS3-16"^^xsd:string ,
+           "lineS3-17"^^xsd:string ,
+           "lineS3-2"^^xsd:string ,
+           "lineS3-3"^^xsd:string ,
+           "lineS3-4"^^xsd:string ,
+           "lineS3-5"^^xsd:string ,
+           "lineS3-6"^^xsd:string ,
+           "lineS3-7"^^xsd:string ,
+           "lineS3-8"^^xsd:string ,
+           "lineS3-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#S7号线
+:S7号线 rdf:type owl:NamedIndividual ,
+               :地铁线路 ;
+      :包含 :中山湖站 ,
+          :卧龙湖站 ,
+          :幸庄站 ,
+          :无想山站 ,
+          :柘塘站 ,
+          :溧水站 ,
+          :空港新城江宁站 ,
+          :空港新城溧水站 ,
+          :群力站 ;
+      :有支线 "lineS7-1"^^xsd:string ,
+           "lineS7-2"^^xsd:string ,
+           "lineS7-3"^^xsd:string ,
+           "lineS7-4"^^xsd:string ,
+           "lineS7-5"^^xsd:string ,
+           "lineS7-6"^^xsd:string ,
+           "lineS7-7"^^xsd:string ,
+           "lineS7-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#S8号线
+:S8号线 rdf:type owl:NamedIndividual ,
+               :地铁线路 ;
+      :包含 :信息工程大学站 ,
+          :八百桥站 ,
+          :六合开发区站 ,
+          :凤凰山公园站 ,
+          :化工园站 ,
+          :卸甲甸站 ,
+          :大厂站 ,
+          :方洲广场站 ,
+          :沈桥站 ,
+          :泰冯路站 ,
+          :泰山新村站 ,
+          :葛塘站 ,
+          :金牛湖站 ,
+          :长芦站 ,
+          :雄州站 ,
+          :高新开发区站 ,
+          :龙池站 ;
+      :有支线 "lineS8-1"^^xsd:string ,
+           "lineS8-10"^^xsd:string ,
+           "lineS8-11"^^xsd:string ,
+           "lineS8-12"^^xsd:string ,
+           "lineS8-13"^^xsd:string ,
+           "lineS8-14"^^xsd:string ,
+           "lineS8-15"^^xsd:string ,
+           "lineS8-16"^^xsd:string ,
+           "lineS8-2"^^xsd:string ,
+           "lineS8-3"^^xsd:string ,
+           "lineS8-4"^^xsd:string ,
+           "lineS8-5"^^xsd:string ,
+           "lineS8-6"^^xsd:string ,
+           "lineS8-7"^^xsd:string ,
+           "lineS8-8"^^xsd:string ,
+           "lineS8-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#S9号线
+:S9号线 rdf:type owl:NamedIndividual ,
+               :地铁线路 ;
+      :包含 :团结圩站 ,
+          :明觉站 ,
+          :石湫站 ,
+          :翔宇路南站 ,
+          :铜山站 ,
+          :高淳站 ;
+      :有支线 "lineS9-1"^^xsd:string ,
+           "lineS9-2"^^xsd:string ,
+           "lineS9-3"^^xsd:string ,
+           "lineS9-4"^^xsd:string ,
+           "lineS9-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#三山街站
+:三山街站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#上元门站
+:上元门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#上海路站
+:上海路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#下马坊站
+:下马坊站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#东大九龙湖校区站
+:东大九龙湖校区站 rdf:type owl:NamedIndividual ,
+                   :地铁站 ;
+          :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+          :位于 "line3-23"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#东大成贤学院站
+:东大成贤学院站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+         :位于 "line3-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#东流站
+:东流站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+     :位于 "line4-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#中华门站
+:中华门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#中国药科大学站
+:中国药科大学站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+         :位于 "line1-22"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#中山湖站
+:中山湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S7号线 ;
+      :位于 "lineS7-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#中胜站
+:中胜站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+     :位于 "line10-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#临江·青奥体育公园站
+:临江·青奥体育公园站 rdf:type owl:NamedIndividual ,
+                     :地铁站 ;
+            :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+            :位于 "line10-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#九华山站
+:九华山站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#九龙湖站
+:九龙湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-21"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#云南路站
+:云南路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#云锦路站
+:云锦路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-17"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#五塘广场站
+:五塘广场站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#仙林中心站
+:仙林中心站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+       :位于 "line2-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#仙林湖站
+:仙林湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#仙鹤门站
+:仙鹤门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#信息工程大学站
+:信息工程大学站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 :S8号线 ;
+         :位于 "lineS8-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#元通站
+:元通站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ,
+         <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+     :位于 "across2-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#八百桥站
+:八百桥站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S8号线 ;
+      :位于 "lineS8-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#六合开发区站
+:六合开发区站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 :S8号线 ;
+        :位于 "lineS8-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#兰花塘站
+:兰花塘站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#兴隆大街站
+:兴隆大街站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+       :位于 "line2-19"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#凤凰山公园站
+:凤凰山公园站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 :S8号线 ;
+        :位于 "lineS8-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#刘村站
+:刘村站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S3号线 ;
+     :位于 "lineS3-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#化工园站
+:化工园站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S8号线 ;
+      :位于 "lineS8-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南京交院站
+:南京交院站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+       :位于 "line1-21"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南京南站
+:南京南站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S1号线 ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "across3-s1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南京工业大学站
+:南京工业大学站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+         :位于 "line10-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南京林业大学·新庄站
+:南京林业大学·新庄站 rdf:type owl:NamedIndividual ,
+                     :地铁站 ;
+            :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+            :位于 "line3-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南京站
+:南京站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ,
+         <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+     :位于 "across3-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南医大·江苏经贸学院站
+:南医大·江苏经贸学院站 rdf:type owl:NamedIndividual ,
+                      :地铁站 ;
+             :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+             :位于 "line1-20"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南大仙林校区站
+:南大仙林校区站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+         :位于 "line2-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#南艺·二师·草城门站
+:南艺·二师·草城门站 rdf:type owl:NamedIndividual ,
+                     :地铁站 ;
+            :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+            :位于 "line4-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#卡子门站
+:卡子门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#卧龙湖站
+:卧龙湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S7号线 ;
+      :位于 "lineS7-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#卸甲甸站
+:卸甲甸站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S8号线 ;
+      :位于 "lineS8-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#双垅站
+:双垅站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S3号线 ;
+     :位于 "lineS3-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#双龙大道站
+:双龙大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+       :位于 "line1-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#吉印大道站
+:吉印大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S1号线 ;
+       :位于 "lineS1-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#吴侯街站
+:吴侯街站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#团结圩站
+:团结圩站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S9号线 ;
+      :位于 "lineS9-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#大厂站
+:大厂站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#大明路站
+:大明路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-16"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#大行宫站
+:大行宫站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "across3-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#天保站
+:天保站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S3号线 ;
+     :位于 "lineS3-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#天元西路站
+:天元西路站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-20"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#天印大道站
+:天印大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+       :位于 "line1-18"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#天润城站
+:天润城站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#天隆寺站
+:天隆寺站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#夫子庙站
+:夫子庙站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#奥体东站
+:奥体东站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-20"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#奥体中心站
+:奥体中心站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+       :位于 "line10-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#孝陵卫站
+:孝陵卫站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#孟北站
+:孟北站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+     :位于 "line4-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#学则路站
+:学则路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#安德门站
+:安德门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "across1-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#宏运大道站
+:宏运大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-18"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#小市站
+:小市站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+     :位于 "line3-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#小行站
+:小行站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+     :位于 "line10-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#小龙湾站
+:小龙湾站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-16"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#岗子村站
+:岗子村站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#常府街站
+:常府街站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#平良大街站
+:平良大街站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S3号线 ;
+       :位于 "lineS3-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#幸庄站
+:幸庄站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S7号线 ;
+     :位于 "lineS7-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#张府园站
+:张府园站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#文德路站
+:文德路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "line10-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#新模范马路站
+:新模范马路站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+        :位于 "line1-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#新街口站
+:新街口站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "across1-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#方洲广场站
+:方洲广场站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S8号线 ;
+       :位于 "lineS8-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#无想山站
+:无想山站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S7号线 ;
+      :位于 "lineS7-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#明发广场站
+:明发广场站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-17"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#明故宫站
+:明故宫站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-12"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#明觉站
+:明觉站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S9号线 ;
+     :位于 "lineS9-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#星火路站
+:星火路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#春江路站
+:春江路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#景明佳园站
+:景明佳园站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S3号线 ;
+       :位于 "lineS3-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#林场站
+:林场站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+     :位于 "line3-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#林山站
+:林山站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S3号线 ;
+     :位于 "lineS3-16"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#柘塘站
+:柘塘站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S7号线 ;
+     :位于 "lineS7-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#柳洲东路站
+:柳洲东路站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#桥林新城站
+:桥林新城站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S3号线 ;
+       :位于 "lineS3-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#梦都大街站
+:梦都大街站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+       :位于 "line10-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#正方中路站
+:正方中路站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S1号线 ;
+       :位于 "lineS1-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#武定门站
+:武定门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#永初路站
+:永初路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#汇通路站
+:汇通路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#汉中门站
+:汉中门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#江心洲站
+:江心洲站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "line10-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#沈桥站
+:沈桥站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#河定桥站
+:河定桥站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#河海大学·佛城西路站
+:河海大学·佛城西路站 rdf:type owl:NamedIndividual ,
+                     :地铁站 ;
+            :属于 :S1号线 ;
+            :位于 "lineS1-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#油坊桥站
+:油坊桥站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "across2-s3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#泰冯路站
+:泰冯路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S8号线 ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "across3-s8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#泰山新村站
+:泰山新村站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S8号线 ;
+       :位于 "lineS8-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#浦口万汇城站
+:浦口万汇城站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+        :位于 "line10-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#浮桥站
+:浮桥站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+     :位于 "line3-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#溧水站
+:溧水站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S7号线 ;
+     :位于 "lineS7-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#灵山站
+:灵山站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+     :位于 "line4-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#玄武门站
+:玄武门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#王家湾站
+:王家湾站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#珠江路站
+:珠江路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#百家湖站
+:百家湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#石湫站
+:石湫站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S9号线 ;
+     :位于 "lineS9-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#石碛河站
+:石碛河站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#禄口机场站
+:禄口机场站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S1号线 ;
+       :位于 "lineS1-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#秣周东路站
+:秣周东路站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-24"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#空港新城江宁站
+:空港新城江宁站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 :S1号线 ,
+             :S7号线 ;
+         :位于 "acrossS1-s7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#空港新城溧水站
+:空港新城溧水站 rdf:type owl:NamedIndividual ,
+                  :地铁站 ;
+         :属于 :S7号线 ;
+         :位于 "lineS7-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#竹山路站
+:竹山路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-17"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#红山动物园站
+:红山动物园站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+        :位于 "line1-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#经天路站
+:经天路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#绿博园站
+:绿博园站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "line10-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#羊山公园站
+:羊山公园站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+       :位于 "line2-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#群力站
+:群力站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S7号线 ;
+     :位于 "lineS7-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#翔宇路北站
+:翔宇路北站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S1号线 ;
+       :位于 "lineS1-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#翔宇路南站
+:翔宇路南站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 :S1号线 ,
+           :S9号线 ;
+       :位于 "acrossS1-s9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#翠屏山站
+:翠屏山站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S1号线 ;
+      :位于 "lineS1-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#聚宝山站
+:聚宝山站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#胜太西路站
+:胜太西路站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-19"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#胜太路站
+:胜太路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#花神庙站
+:花神庙站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#苏宁总部·徐庄站
+:苏宁总部·徐庄站 rdf:type owl:NamedIndividual ,
+                   :地铁站 ;
+          :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+          :位于 "line4-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#苜蓿园站
+:苜蓿园站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#莫愁路站
+:莫愁路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-16"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#葛塘站
+:葛塘站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#蒋王庙站
+:蒋王庙站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "line4-6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#西安门站
+:西安门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#西岗桦墅站
+:西岗桦墅站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+       :位于 "line4-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#诚信大道站
+:诚信大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+       :位于 "line3-22"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#贾西站
+:贾西站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S3号线 ;
+     :位于 "lineS3-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#软件大道站
+:软件大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+       :位于 "line1-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#迈皋桥站
+:迈皋桥站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+      :位于 "line1-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#金牛湖站
+:金牛湖站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S8号线 ;
+      :位于 "lineS8-16"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#金马路站
+:金马路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "across4-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#钟灵街站
+:钟灵街站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+      :位于 "line2-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#铁心桥站
+:铁心桥站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#铜山站
+:铜山站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S9号线 ;
+     :位于 "lineS9-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#长芦站
+:长芦站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#雄州站
+:雄州站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#集庆门大街站
+:集庆门大街站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+        :位于 "line2-18"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#雨山路站
+:雨山路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "line10-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#雨润大街站
+:雨润大街站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+       :位于 "line2-21"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#雨花门站
+:雨花门站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ;
+      :位于 "line3-14"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#马群站
+:马群站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> ;
+     :位于 "line2-7"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#马骡圩站
+:马骡圩站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-11"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#高家冲站
+:高家冲站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-17"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#高庙路站
+:高庙路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 :S3号线 ;
+      :位于 "lineS3-8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#高新开发区站
+:高新开发区站 rdf:type owl:NamedIndividual ,
+                 :地铁站 ;
+        :属于 :S8号线 ;
+        :位于 "lineS8-2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#高淳站
+:高淳站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S9号线 ;
+     :位于 "lineS9-5"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#鸡鸣寺站
+:鸡鸣寺站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> ,
+          <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+      :位于 "across3-4"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#鼓楼站
+:鼓楼站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ,
+         <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+     :位于 "across4-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#龙华路站
+:龙华路站 rdf:type owl:NamedIndividual ,
+               :地铁站 ;
+      :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> ;
+      :位于 "line10-3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#龙江站
+:龙江站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> ;
+     :位于 "line4-1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#龙池站
+:龙池站 rdf:type owl:NamedIndividual ,
+              :地铁站 ;
+     :属于 :S8号线 ;
+     :位于 "lineS8-10"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#龙眠大道站
+:龙眠大道站 rdf:type owl:NamedIndividual ,
+                :地铁站 ;
+       :属于 <http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> ;
+       :位于 "line1-19"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#1号线> rdf:type owl:NamedIndividual ,
+                                                                                                :地铁线路 ;
+                                                                                       :包含 :三山街站 ,
+                                                                                           :中华门站 ,
+                                                                                           :中国药科大学站 ,
+                                                                                           :南京交院站 ,
+                                                                                           :南京站 ,
+                                                                                           :南医大·江苏经贸学院站 ,
+                                                                                           :双龙大道站 ,
+                                                                                           :天印大道站 ,
+                                                                                           :天隆寺站 ,
+                                                                                           :安德门站 ,
+                                                                                           :小龙湾站 ,
+                                                                                           :张府园站 ,
+                                                                                           :新模范马路站 ,
+                                                                                           :新街口站 ,
+                                                                                           :河定桥站 ,
+                                                                                           :玄武门站 ,
+                                                                                           :珠江路站 ,
+                                                                                           :百家湖站 ,
+                                                                                           :竹山路站 ,
+                                                                                           :红山动物园站 ,
+                                                                                           :胜太路站 ,
+                                                                                           :花神庙站 ,
+                                                                                           :软件大道站 ,
+                                                                                           :迈皋桥站 ,
+                                                                                           :鼓楼站 ,
+                                                                                           :龙眠大道站 ;
+                                                                                       :有支线 "across1-10"^^xsd:string ,
+                                                                                            "across1-2"^^xsd:string ,
+                                                                                            "line1-1"^^xsd:string ,
+                                                                                            "line1-10"^^xsd:string ,
+                                                                                            "line1-11"^^xsd:string ,
+                                                                                            "line1-12"^^xsd:string ,
+                                                                                            "line1-13"^^xsd:string ,
+                                                                                            "line1-14"^^xsd:string ,
+                                                                                            "line1-15"^^xsd:string ,
+                                                                                            "line1-16"^^xsd:string ,
+                                                                                            "line1-17"^^xsd:string ,
+                                                                                            "line1-18"^^xsd:string ,
+                                                                                            "line1-19"^^xsd:string ,
+                                                                                            "line1-2"^^xsd:string ,
+                                                                                            "line1-20"^^xsd:string ,
+                                                                                            "line1-21"^^xsd:string ,
+                                                                                            "line1-22"^^xsd:string ,
+                                                                                            "line1-3"^^xsd:string ,
+                                                                                            "line1-4"^^xsd:string ,
+                                                                                            "line1-5"^^xsd:string ,
+                                                                                            "line1-6"^^xsd:string ,
+                                                                                            "line1-7"^^xsd:string ,
+                                                                                            "line1-8"^^xsd:string ,
+                                                                                            "line1-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#10号线> rdf:type owl:NamedIndividual ,
+                                                                                                 :地铁线路 ;
+                                                                                        :包含 :中胜站 ,
+                                                                                            :临江·青奥体育公园站 ,
+                                                                                            :元通站 ,
+                                                                                            :南京工业大学站 ,
+                                                                                            :奥体中心站 ,
+                                                                                            :安德门站 ,
+                                                                                            :小行站 ,
+                                                                                            :文德路站 ,
+                                                                                            :梦都大街站 ,
+                                                                                            :江心洲站 ,
+                                                                                            :浦口万汇城站 ,
+                                                                                            :绿博园站 ,
+                                                                                            :雨山路站 ,
+                                                                                            :龙华路站 ;
+                                                                                        :有支线 "line10-1"^^xsd:string ,
+                                                                                             "line10-10"^^xsd:string ,
+                                                                                             "line10-11"^^xsd:string ,
+                                                                                             "line10-12"^^xsd:string ,
+                                                                                             "line10-2"^^xsd:string ,
+                                                                                             "line10-3"^^xsd:string ,
+                                                                                             "line10-4"^^xsd:string ,
+                                                                                             "line10-5"^^xsd:string ,
+                                                                                             "line10-6"^^xsd:string ,
+                                                                                             "line10-7"^^xsd:string ,
+                                                                                             "line10-8"^^xsd:string ,
+                                                                                             "line10-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#2号线> rdf:type owl:NamedIndividual ,
+                                                                                                :地铁线路 ;
+                                                                                       :包含 :上海路站 ,
+                                                                                           :下马坊站 ,
+                                                                                           :云锦路站 ,
+                                                                                           :仙林中心站 ,
+                                                                                           :仙鹤门站 ,
+                                                                                           :元通站 ,
+                                                                                           :兴隆大街站 ,
+                                                                                           :南大仙林校区站 ,
+                                                                                           :大行宫站 ,
+                                                                                           :奥体东站 ,
+                                                                                           :孝陵卫站 ,
+                                                                                           :学则路站 ,
+                                                                                           :新街口站 ,
+                                                                                           :明故宫站 ,
+                                                                                           :汉中门站 ,
+                                                                                           :油坊桥站 ,
+                                                                                           :经天路站 ,
+                                                                                           :羊山公园站 ,
+                                                                                           :苜蓿园站 ,
+                                                                                           :莫愁路站 ,
+                                                                                           :西安门站 ,
+                                                                                           :金马路站 ,
+                                                                                           :钟灵街站 ,
+                                                                                           :集庆门大街站 ,
+                                                                                           :雨润大街站 ,
+                                                                                           :马群站 ;
+                                                                                       :有支线 "across2-10"^^xsd:string ,
+                                                                                            "across2-s3"^^xsd:string ,
+                                                                                            "line2-1"^^xsd:string ,
+                                                                                            "line2-10"^^xsd:string ,
+                                                                                            "line2-11"^^xsd:string ,
+                                                                                            "line2-12"^^xsd:string ,
+                                                                                            "line2-13"^^xsd:string ,
+                                                                                            "line2-14"^^xsd:string ,
+                                                                                            "line2-15"^^xsd:string ,
+                                                                                            "line2-16"^^xsd:string ,
+                                                                                            "line2-17"^^xsd:string ,
+                                                                                            "line2-18"^^xsd:string ,
+                                                                                            "line2-19"^^xsd:string ,
+                                                                                            "line2-2"^^xsd:string ,
+                                                                                            "line2-20"^^xsd:string ,
+                                                                                            "line2-21"^^xsd:string ,
+                                                                                            "line2-3"^^xsd:string ,
+                                                                                            "line2-4"^^xsd:string ,
+                                                                                            "line2-5"^^xsd:string ,
+                                                                                            "line2-6"^^xsd:string ,
+                                                                                            "line2-7"^^xsd:string ,
+                                                                                            "line2-8"^^xsd:string ,
+                                                                                            "line2-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#3号线> rdf:type owl:NamedIndividual ,
+                                                                                                :地铁线路 ;
+                                                                                       :包含 :上元门站 ,
+                                                                                           :东大九龙湖校区站 ,
+                                                                                           :东大成贤学院站 ,
+                                                                                           :九龙湖站 ,
+                                                                                           :五塘广场站 ,
+                                                                                           :南京南站 ,
+                                                                                           :南京林业大学·新庄站 ,
+                                                                                           :南京站 ,
+                                                                                           :卡子门站 ,
+                                                                                           :大明路站 ,
+                                                                                           :大行宫站 ,
+                                                                                           :天元西路站 ,
+                                                                                           :天润城站 ,
+                                                                                           :夫子庙站 ,
+                                                                                           :宏运大道站 ,
+                                                                                           :小市站 ,
+                                                                                           :常府街站 ,
+                                                                                           :明发广场站 ,
+                                                                                           :星火路站 ,
+                                                                                           :林场站 ,
+                                                                                           :柳洲东路站 ,
+                                                                                           :武定门站 ,
+                                                                                           :泰冯路站 ,
+                                                                                           :浮桥站 ,
+                                                                                           :秣周东路站 ,
+                                                                                           :胜太西路站 ,
+                                                                                           :诚信大道站 ,
+                                                                                           :雨花门站 ,
+                                                                                           :鸡鸣寺站 ;
+                                                                                       :有支线 "across3-1"^^xsd:string ,
+                                                                                            "across3-2"^^xsd:string ,
+                                                                                            "across3-4"^^xsd:string ,
+                                                                                            "across3-s1"^^xsd:string ,
+                                                                                            "across3-s8"^^xsd:string ,
+                                                                                            "line3-1"^^xsd:string ,
+                                                                                            "line3-10"^^xsd:string ,
+                                                                                            "line3-11"^^xsd:string ,
+                                                                                            "line3-12"^^xsd:string ,
+                                                                                            "line3-13"^^xsd:string ,
+                                                                                            "line3-14"^^xsd:string ,
+                                                                                            "line3-15"^^xsd:string ,
+                                                                                            "line3-16"^^xsd:string ,
+                                                                                            "line3-17"^^xsd:string ,
+                                                                                            "line3-18"^^xsd:string ,
+                                                                                            "line3-19"^^xsd:string ,
+                                                                                            "line3-2"^^xsd:string ,
+                                                                                            "line3-20"^^xsd:string ,
+                                                                                            "line3-21"^^xsd:string ,
+                                                                                            "line3-22"^^xsd:string ,
+                                                                                            "line3-23"^^xsd:string ,
+                                                                                            "line3-24"^^xsd:string ,
+                                                                                            "line3-3"^^xsd:string ,
+                                                                                            "line3-4"^^xsd:string ,
+                                                                                            "line3-5"^^xsd:string ,
+                                                                                            "line3-6"^^xsd:string ,
+                                                                                            "line3-7"^^xsd:string ,
+                                                                                            "line3-8"^^xsd:string ,
+                                                                                            "line3-9"^^xsd:string .
+
+
+###  http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线
+<http://www.semanticweb.org/administrator/ontologies/2021/10/untitled-ontology-10#4号线> rdf:type owl:NamedIndividual ,
+                                                                                                :地铁线路 ;
+                                                                                       :包含 :东流站 ,
+                                                                                           :九华山站 ,
+                                                                                           :云南路站 ,
+                                                                                           :仙林湖站 ,
+                                                                                           :南艺·二师·草城门站 ,
+                                                                                           :孟北站 ,
+                                                                                           :岗子村站 ,
+                                                                                           :汇通路站 ,
+                                                                                           :灵山站 ,
+                                                                                           :王家湾站 ,
+                                                                                           :聚宝山站 ,
+                                                                                           :苏宁总部·徐庄站 ,
+                                                                                           :蒋王庙站 ,
+                                                                                           :西岗桦墅站 ,
+                                                                                           :金马路站 ,
+                                                                                           :鸡鸣寺站 ,
+                                                                                           :鼓楼站 ,
+                                                                                           :龙江站 ;
+                                                                                       :有支线 "across4-1"^^xsd:string ,
+                                                                                            "across4-2"^^xsd:string ,
+                                                                                            "line4-1"^^xsd:string ,
+                                                                                            "line4-10"^^xsd:string ,
+                                                                                            "line4-11"^^xsd:string ,
+                                                                                            "line4-12"^^xsd:string ,
+                                                                                            "line4-13"^^xsd:string ,
+                                                                                            "line4-14"^^xsd:string ,
+                                                                                            "line4-15"^^xsd:string ,
+                                                                                            "line4-2"^^xsd:string ,
+                                                                                            "line4-3"^^xsd:string ,
+                                                                                            "line4-4"^^xsd:string ,
+                                                                                            "line4-5"^^xsd:string ,
+                                                                                            "line4-6"^^xsd:string ,
+                                                                                            "line4-7"^^xsd:string ,
+                                                                                            "line4-8"^^xsd:string ,
+                                                                                            "line4-9"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

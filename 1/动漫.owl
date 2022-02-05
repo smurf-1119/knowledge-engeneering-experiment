@@ -1,0 +1,266 @@
+@prefix : <http://www.seu.edu.cn/ontologies/pizza.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.seu.edu.cn/ontologies/鬼灭之刃.owl> .
+
+<http://www.seu.edu.cn/ontologies/鬼灭之刃.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#制作
+:制作 rdf:type owl:ObjectProperty ;
+    rdfs:domain :公司 ,
+                :声优 ,
+                :画家 ,
+                [ rdf:type owl:Restriction ;
+                  owl:onProperty :制作 ;
+                  owl:someValuesFrom :动漫
+                ] ;
+    rdfs:range :动漫 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#投资制作
+:投资制作 rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :制作 ;
+      rdfs:domain :公司 ;
+      rdfs:range :动漫 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#是哥哥
+:是哥哥 rdf:type owl:ObjectProperty ;
+     owl:inverseOf :是妹妹 ;
+     rdfs:domain :动漫角色 ,
+                 [ rdf:type owl:Restriction ;
+                   owl:onProperty :是哥哥 ;
+                   owl:allValuesFrom :动漫角色
+                 ] ;
+     rdfs:range :动漫角色 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#是妹妹
+:是妹妹 rdf:type owl:ObjectProperty .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#是情侣
+:是情侣 rdf:type owl:ObjectProperty ;
+     rdfs:domain :动漫角色 ;
+     rdfs:range :动漫角色 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#漫画制作
+:漫画制作 rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :制作 ;
+      rdfs:domain :画家 ;
+      rdfs:range :动漫 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#配音制作
+:配音制作 rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :制作 ;
+      rdfs:domain :声优 ;
+      rdfs:range :动漫 .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#年龄是
+:年龄是 rdf:type owl:DatatypeProperty ;
+     rdfs:domain :动漫角色 ,
+                 :声优 ,
+                 :画家 ;
+     rdfs:range xsd:int .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#性别是
+:性别是 rdf:type owl:DatatypeProperty ;
+     rdfs:domain :动漫角色 ,
+                 :声优 ,
+                 :画家 ;
+     rdfs:range xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#集数是
+:集数是 rdf:type owl:DatatypeProperty ;
+     rdfs:domain :动漫 ;
+     rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#公司
+:公司 rdf:type owl:Class .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#动漫
+:动漫 rdf:type owl:Class .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#动漫角色
+:动漫角色 rdf:type owl:Class .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#声优
+:声优 rdf:type owl:Class .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#热血动漫
+:热血动漫 rdf:type owl:Class ;
+      rdfs:subClassOf :动漫 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#画家
+:画家 rdf:type owl:Class .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#青春动漫
+:青春动漫 rdf:type owl:Class ;
+      rdfs:subClassOf :动漫 .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#A-1_Pictures
+:A-1_Pictures rdf:type owl:NamedIndividual ,
+                       :公司 ;
+              :投资制作 :辉夜大小姐想让我告白～天才们的恋爱头脑战～ .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#古川慎
+:古川慎 rdf:type owl:NamedIndividual ,
+              :声优 ;
+     :配音制作 :白银御行 ;
+     :年龄是 "32"^^xsd:int ;
+     :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#古贺葵
+:古贺葵 rdf:type owl:NamedIndividual ,
+              :声优 ;
+     :配音制作 :四宫辉夜 ;
+     :年龄是 "28"^^xsd:int ;
+     :性别是 "woman"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#吾峠呼世晴
+:吾峠呼世晴 rdf:type owl:NamedIndividual ,
+                :画家 ;
+       :漫画制作 :鬼灭之刃 ;
+       :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#四宫辉夜
+:四宫辉夜 rdf:type owl:NamedIndividual ,
+               :动漫角色 ;
+      :是情侣 :白银御行 ;
+      :年龄是 "17"^^xsd:int ;
+      :性别是 "woman"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#灶门炭治郎
+:灶门炭治郎 rdf:type owl:NamedIndividual ,
+                :动漫角色 ;
+       :是哥哥 :灶门祢豆子 ;
+       :年龄是 "15"^^xsd:int ;
+       :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#灶门祢豆子
+:灶门祢豆子 rdf:type owl:NamedIndividual ,
+                :动漫角色 ;
+       :是妹妹 :灶门炭治郎 ;
+       :年龄是 "14"^^xsd:int ;
+       :性别是 "woman"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#白银御行
+:白银御行 rdf:type owl:NamedIndividual ,
+               :动漫角色 ;
+      :是情侣 :四宫辉夜 ;
+      :年龄是 "17"^^xsd:int ;
+      :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#花江夏树
+:花江夏树 rdf:type owl:NamedIndividual ,
+               :声优 ;
+      :配音制作 :灶门炭治郎 ;
+      :年龄是 "27"^^xsd:int ;
+      :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#赤坂明
+:赤坂明 rdf:type owl:NamedIndividual ,
+              :画家 ;
+     :漫画制作 :辉夜大小姐想让我告白～天才们的恋爱头脑战～ ;
+     :性别是 "man"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#辉夜大小姐想让我告白～天才们的恋爱头脑战～
+:辉夜大小姐想让我告白～天才们的恋爱头脑战～ rdf:type owl:NamedIndividual ,
+                                :青春动漫 ;
+                       :集数是 "24"^^xsd:int .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#飞碟社
+:飞碟社 rdf:type owl:NamedIndividual ,
+              :公司 ;
+     :投资制作 :鬼灭之刃 .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#鬼头明里
+:鬼头明里 rdf:type owl:NamedIndividual ,
+               :声优 ;
+      :配音制作 :四宫辉夜 ;
+      :年龄是 "27"^^xsd:int ;
+      :性别是 "woman"^^xsd:string .
+
+
+###  http://www.seu.edu.cn/ontologies/pizza.owl#鬼灭之刃
+:鬼灭之刃 rdf:type owl:NamedIndividual ,
+               :热血动漫 ;
+      :集数是 "26"^^xsd:int .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :公司
+                :动漫
+                :动漫角色
+                :声优
+                :画家
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :制作
+                :是哥哥
+                :是妹妹
+                :是情侣
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :年龄是
+                :性别是
+                :集数是
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
